@@ -8,11 +8,13 @@
                             Құрметті қонақтар! 					
                         </h1>
                         <div class="shaktext">
-                                                    Сіз(дер)ді ұлымыз Дәурен мен келініміз Ұлдананың						<br class="brblok">
-                                шаңырақ көтеру тойына арналған<br class="brblok">
-                                салтанатты ақ дастарханымыздың<br class="brblok">
-                                қадірлі қонағы болуға шақырамыз.<br class="brblok">
-                                            </div>
+                            <p>
+                                <span style="white-space: nowrap;">Сіз(дер)ді ұлымыз Дәурен мен келініміз Ұлдананың</span>						
+                                шаңырақ көтеру тойына арналған
+                                салтанатты ақ дастарханымыздың
+                                қадірлі қонағы болуға шақырамыз.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,10 +84,10 @@
                             <label class="otvetyn" for="contactChoice3">Өкінішке орай, келе алмаймын</label>
                             <br>
                             <span class="spanzay">Аты-жөніңіз:</span>
-                            <input class="inputname" type="text" name="name" placeholder="Аты-жөніңіз">
+                            <input v-model="fio" class="inputname" type="text" name="name" placeholder="Аты-жөніңіз">
                             <span class="spanzay">Той иелеріне тілегіңіз:</span>
-                            <textarea name="tilek" class="inputtilek" placeholder="Тілегіңізді осында жазыңыз"></textarea>
-                            <button @click="sendShit()" class="zayotrp">Жіберу</button>
+                            <textarea v-model="greet" name="tilek" class="inputtilek" placeholder="Тілегіңізді осында жазыңыз"></textarea>
+                            <button :disabled="isEmpty()" @click="sendShit()" class="zayotrp">Жіберу</button>
                         </div>
                     </div>
                 </div>
@@ -96,17 +98,29 @@
 
 <script >
 import axios from 'axios';
+import Toast from '@/components/Toast.vue';
 export default{
+    components: {
+        Toast
+    },
     data(){
         return{
-
+            greet:'',
+            fio:''
         }
     },
     methods:{
+        isEmpty(){
+            if(!!this.fio === false || !!this.greet === false){
+                return true
+            }else{
+                return false
+            }
+        },
         sendShit(){
             let variant = document.querySelector('input[name="zhauap"]:checked').value;
-            let fio = document.getElementsByClassName('inputname')[0].value
-            let greet = document.getElementsByClassName('inputtilek')[0].value
+            let fio = this.fio
+            let greet = this.greet
             let payload = {
                 variant:variant,
                 fio:fio,
@@ -130,6 +144,16 @@ export default{
             .catch(error => {
                 // console.error('Error sending message:', error);
             });
+            // let  = document.querySelector('input[name="zhauap"]:checked').value;
+            document.getElementsByClassName('inputname')[0].value = ''
+            document.getElementsByClassName('inputtilek')[0].value = ''
+            this.$bvToast.toast('Ақпарат той иелеріне жіберілді!', {
+                title: 'Хабарлама!',
+                noAutohide:true,
+                appendToast: true,
+                variant:'success',
+                solid:true,
+            })
         },
         // },
     },
@@ -201,6 +225,19 @@ export default{
             // const $dayscontent.dataset.title = $days.textContent;
             // вызываем функцию countdownTimer каждую секунду
             timerId = setInterval(countdownTimer, 1000);
+
+            const button = document.querySelector('.zayotrp');
+
+            button.addEventListener('click', function() {
+            button.classList.add('clicked');
+            button.disabled = true;
+
+            // Simulating a delay before re-enabling the button
+            setTimeout(function() {
+                button.classList.remove('clicked');
+                button.disabled = false;
+            }, 500);
+            });
         });
     }
 }

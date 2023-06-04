@@ -1770,23 +1770,50 @@ input.inputname:focus {
 }
 
 .zayotrp {
-	border: none;
-	display: block;
-	margin: 0 auto;
-	width: 240px;
-	height: 60px;
-	font-family: FuturaPT-400;
-	font-size: 18px;
-	text-align: center;
-	color: #fff;
-	background: linear-gradient(117.06deg, #20741D 23.73%, #41BE3D 45.38%, #20741D 52.48%, #2AAF25 80.6%);
-	border-radius: 10px;
-	padding: 15px;
-	border-bottom: 4px solid #20741D;
-	box-shadow: 1px 3px 10px #20741D;
-	margin-top: 20px;
-	margin-bottom: 30px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 60px;
+  font-family: FuturaPT-400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(117.06deg, #20741D 23.73%, #41BE3D 45.38%, #20741D 52.48%, #2AAF25 80.6%);
+  border-radius: 10px;
+  padding: 15px;
+  border-bottom: 4px solid #20741D;
+  box-shadow: 1px 3px 10px #20741D;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
+
+.zayotrp:hover {
+  background: linear-gradient(117.06deg, #1D6B1B 23.73%, #39A22F 45.38%, #1D6B1B 52.48%, #26A035 80.6%);
+}
+
+.zayotrp:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zayotrp.clicked {
+  animation: click-animation 0.3s;
+}
+
 
 .deadline {
 	font-family: FuturaPT-400;
