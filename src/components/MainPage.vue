@@ -9,7 +9,7 @@
                         </h1>
                         <div class="shaktext">
                             <p>
-                                <span style="white-space: nowrap;">Сіз(дер)ді ұлымыз Дәурен мен келініміз Ұлдананың</span>						
+                                Сіз(дер)ді <br> ұлымыз Дәурен мен келініміз Ұлдананың						
                                 шаңырақ көтеру тойына арналған
                                 салтанатты ақ дастарханымыздың
                                 қадірлі қонағы болуға шақырамыз.
@@ -92,6 +92,7 @@
                     </div>
                 </div>
             </div>
+            <audio-player></audio-player>
         </div>
     </div>
 </template>
@@ -99,9 +100,11 @@
 <script >
 import axios from 'axios';
 import Toast from '@/components/Toast.vue';
+import AudioPlayer from './AudioPlayer.vue';
 export default{
     components: {
-        Toast
+        Toast,
+        AudioPlayer
     },
     data(){
         return{

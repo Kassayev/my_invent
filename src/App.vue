@@ -1507,7 +1507,8 @@ body {
 }
 
 .blok-1 {
-	background-image: url(./assets/images/fon-default.png);
+	/* background-image: url(./assets/images/fon-default.png); */
+	background-image: url(./assets/images/1685877153.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -2459,7 +2460,7 @@ span.newprice {
     box-shadow: 0px 1px 6px #00000069;
 }
 .sound-off-gif {
-    max-height: 36px;
+    max-height: 36px !important;
     margin-left: 5px;
 }
 .sound-on span {
@@ -2467,7 +2468,7 @@ span.newprice {
     margin-left: 2px;
 }
 .sound-off {
-    display: none;
+    /* display: none; */
     float: left;
 }
 
