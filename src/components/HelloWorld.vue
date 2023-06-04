@@ -49,7 +49,6 @@ export default {
       // getServers(){
       //   this.axios.get('http://192.168.35.32:8181/api/servers')
       //   .then((resp)=>{
-      //     console.log(resp)
       //   })
       // }
     },
