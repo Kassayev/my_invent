@@ -1508,7 +1508,7 @@ body {
 
 .blok-1 {
 	/* background-image: url(./assets/images/fon-default.png); */
-	background-image: url(./assets/images/1685877153.png);
+	background-image: url(./assets/images/1685881245.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
