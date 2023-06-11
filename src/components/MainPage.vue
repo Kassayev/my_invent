@@ -35,7 +35,10 @@
                             <div class="toi7"></div>
                             <div class="toi4">
                                 Тойдың басталу уақыты:<br>
-                                29.07.2023 / сағат 17:00					</div>
+                                29.07.2023				</div>
+                            <div style="    width: 100%;">
+                                <vertical-timeline />
+                            </div>
                             <div class="toi5">
                                 Тойдың басталуына қалды:
                             </div>
@@ -52,7 +55,7 @@
                             <div class="toi8"></div>
                             <div class="toi9">Тойдың мекен-жайы:</div>
                             <div class="toi10">
-                                &ZeroWidthSpace;Керим Теленшин көшесі, 1/1 <br>
+                                &ZeroWidthSpace;Шымкент қаласы, Керим Теленшин көшесі, 1/1 <br>
                                 <span>"Олжа" тойханасы</span><br><br>
                             </div>
                             <a target="_blank" href="https://go.2gis.com/vafpjs" class="twogis">Карта арқылы ашу</a>
@@ -101,10 +104,12 @@
 import axios from 'axios';
 import Toast from '@/components/Toast.vue';
 import AudioPlayer from './AudioPlayer.vue';
+import VerticalTimeline from './VerticalTimeline.vue';
 export default{
     components: {
         Toast,
-        AudioPlayer
+        AudioPlayer,
+        VerticalTimeline
     },
     data(){
         return{
