@@ -1534,7 +1534,7 @@ body {
 }
 
 .blok-2 {
-	background-image: url(./assets/images/fon-4 copy.png);
+	background-image: url(./assets/images/fon-5.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -2211,7 +2211,7 @@ input.inputname:focus {
 }
 
 .tblok-3 {
-	background-image: url(/images/tfon-4 copy.png);
+	background-image: url(/images/tfon-5.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;

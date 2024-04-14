@@ -1507,7 +1507,7 @@ body {
 }
 
 .blok-2 {
-	background-image: url(/images/fon-4 copy.png);
+	background-image: url(/images/fon-5.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -1696,7 +1696,7 @@ a.link-peaksoft {
 	font-size: 24px;
 	text-align: center;
 	line-height: 26px;
-	margin-top: 60px;
+	margin-top: 50px;
 	margin-bottom: 20px;
 }
 
@@ -2157,7 +2157,7 @@ input.inputname:focus {
 }
 
 .tblok-3 {
-	background-image: url(/images/tfon-4 copy.png);
+	background-image: url(/images/tfon-5.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
