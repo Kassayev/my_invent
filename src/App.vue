@@ -1546,7 +1546,7 @@ body {
     color: #202020;
     font-size: 22px;
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     flex-direction: column;
     align-items: center;
 }

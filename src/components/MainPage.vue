@@ -31,7 +31,7 @@
                                 Той иелері:
                             </div>
                             <div class="toi3">
-                                Светлана және бауырлары					</div>
+                                Марат-Света					</div>
                             <div class="toi7"></div>
                             <div class="toi4">
                                 Тойдың басталу уақыты:<br>
@@ -55,10 +55,10 @@
                             <div class="toi8"></div>
                             <div class="toi9">Тойдың мекен-жайы:</div>
                             <div class="toi10">
-                                &ZeroWidthSpace;Ақтөбе қаласы, Санкибай батыра, 76a <br>
-                                <span>"Saltanat Saray" тойханасы</span><br><br>
+                                &ZeroWidthSpace;Ақтөбе қаласы, Сеитова, 7 <br>
+                                <span>"Sultan Saray" тойханасы</span><br><br>
                             </div>
-                            <a target="_blank" href="https://2gis.kz/aktobe/geo/70000001083952921" class="twogis">Карта арқылы ашу</a>
+                            <a target="_blank" href="https://2gis.kz/aktobe/geo/70000001076111811" class="twogis">Карта арқылы ашу</a>
                         </div>
                     </div>
                 </div>
