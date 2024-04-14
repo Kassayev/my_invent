@@ -1534,7 +1534,7 @@ body {
 }
 
 .blok-2 {
-	background-image: url(./assets/images/fon-2.jpg);
+	background-image: url(./assets/images/fon-4 copy.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -1546,7 +1546,7 @@ body {
     color: #202020;
     font-size: 22px;
     display: flex;
-    padding-bottom: 275px;
+    padding-bottom: 100px;
     flex-direction: column;
     align-items: center;
 }
@@ -2211,7 +2211,7 @@ input.inputname:focus {
 }
 
 .tblok-3 {
-	background-image: url(/images/tfon-2.jpg);
+	background-image: url(/images/tfon-4 copy.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;

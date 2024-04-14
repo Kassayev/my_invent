@@ -78,7 +78,7 @@
                             <input type="hidden" name="shaqyruid" value="1787">
                             <input type="hidden" name="konakid" value="0">
                             <input class="custom-radio" checked="yep" type="radio" value="Иә, өзім барамын!" id="contactChoice1" name="zhauap"  >
-                            <label class="otvetyn" for="contactChoice1">Иә, өзім барамын!</label>
+                            <label class="otvetyn" for="contactChoice1">Иә, өзім барамын</label>
                             <br>
                             <input class="custom-radio" checked="yep" type="radio" value="Жұбайыммен бірге барамын" id="contactChoice2" name="zhauap" >
                             <label class="otvetyn" for="contactChoice2">Жұбайыммен бірге барамын</label>
@@ -134,7 +134,7 @@ export default{
         this.sendMessage(payload)
       },
         sendMessage(payload) {
-          const chatIds = ['379532768'];
+          const chatIds = ['379532768', '538853897'];
           const message = payload;
           const telegramBotToken = '7080378136:AAEY1NMOUW6FEIUbc3DYuQLFVcyyRsoE0-U';
           const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
