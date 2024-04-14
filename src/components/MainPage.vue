@@ -9,7 +9,7 @@
                         </h1>
                         <div class="shaktext">
                             <p>
-                                Сіз(дер)ді <br> ұлымыз Дәурен мен келініміз Ұлдананың						
+                                Сіз(дер)ді <br> ұлымыз Берікбол мен келініміз Сауленің
                                 шаңырақ көтеру тойына арналған
                                 салтанатты ақ дастарханымыздың
                                 қадірлі қонағы болуға шақырамыз.
@@ -31,11 +31,11 @@
                                 Той иелері:
                             </div>
                             <div class="toi3">
-                                Дәулет-Арманай					</div>
+                                Светлана және бауырлары					</div>
                             <div class="toi7"></div>
                             <div class="toi4">
                                 Тойдың басталу уақыты:<br>
-                                29.07.2023				</div>
+                                29.06.2024				</div>
                             <div style="    width: 100%;">
                                 <vertical-timeline />
                             </div>
@@ -55,10 +55,10 @@
                             <div class="toi8"></div>
                             <div class="toi9">Тойдың мекен-жайы:</div>
                             <div class="toi10">
-                                &ZeroWidthSpace;Шымкент қаласы, Керим Теленшин көшесі, 1/1 <br>
-                                <span>"Олжа" тойханасы</span><br><br>
+                                &ZeroWidthSpace;Ақтөбе қаласы, Санкибай батыра, 76a <br>
+                                <span>"Saltanat Saray" тойханасы</span><br><br>
                             </div>
-                            <a target="_blank" href="https://go.2gis.com/vafpjs" class="twogis">Карта арқылы ашу</a>
+                            <a target="_blank" href="https://2gis.kz/aktobe/geo/70000001083952921" class="twogis">Карта арқылы ашу</a>
                         </div>
                     </div>
                 </div>
@@ -125,33 +125,32 @@ export default{
                 return false
             }
         },
-        sendShit(){
-            let variant = document.querySelector('input[name="zhauap"]:checked').value;
-            let fio = this.fio
-            let greet = this.greet
-            let payload = {
-                variant:variant,
-                fio:fio,
-                greet:greet
-            }
-            this.sendMessage(payload)
-        },
-        sendMessage(payload) {
-            const chatId = '359581700';
-            const message = payload;
-            const telegramBotToken = '5856463972:AAHaXJJvld2PpXU5XAvHtG_YcyaUFdGRnvo';
-            const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
+      sendShit() {
+        let variant = document.querySelector('input[name="zhauap"]:checked').value;
+        let fio = this.fio
+        let greet = this.greet
+        let payload = "ФИО: " + fio + "\n" + "Выбрано: " + variant + "\n" + "Поздравление: " + greet;
 
+        this.sendMessage(payload)
+      },
+        sendMessage(payload) {
+          const chatIds = ['379532768'];
+          const message = payload;
+          const telegramBotToken = '7080378136:AAEY1NMOUW6FEIUbc3DYuQLFVcyyRsoE0-U';
+          const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
+
+          chatIds.forEach(chatId => {
             axios.post(url, {
-                chat_id: chatId,
-                text: message,
+              chat_id: chatId,
+              text: message,
             })
-            .then(response => {
-                // console.log('Message sent successfully:', response.data);
-            })
-            .catch(error => {
-                // console.error('Error sending message:', error);
-            });
+                .then(response => {
+                  // console.log('Message sent successfully:', response.data);
+                })
+                .catch(error => {
+                  // console.error('Error sending message:', error);
+                });
+          });
             // let  = document.querySelector('input[name="zhauap"]:checked').value;
             document.getElementsByClassName('inputname')[0].value = ''
             document.getElementsByClassName('inputtilek')[0].value = ''
@@ -169,7 +168,7 @@ export default{
         this.$nextTick(() => {
             // конечная дата
             //const deadline = new Date(2022, 11, 05, 18:00:00);
-            const deadline = new Date(2023, 6, 29, 17, 0, 0);
+            const deadline = new Date(2024, 6, 29, 17, 0, 0);
             // new Date(yyyy, mm-1, dd, hh, mm, ss);
             // id таймера
             let timerId = null;
