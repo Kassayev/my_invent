@@ -1519,7 +1519,7 @@ body {
 
 .blok-1 {
 	/* background-image: url(./assets/images/fon-default.png); */
-	background-image: url(./assets/images/saule.png);
+	background-image: url(./assets/images/saule-min.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
