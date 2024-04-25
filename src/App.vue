@@ -1658,7 +1658,7 @@ body {
 	background-image: url(./assets/images/bg-2_2.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
-	background-size: 120% 100%;
+	background-size: 125% 100%;
 	/*min-height: 800px;*/
 }
 
