@@ -204,7 +204,7 @@ export default{
         this.$nextTick(() => {
             // конечная дата
             //const deadline = new Date(2022, 11, 05, 18:00:00);
-            const deadline = new Date(2024, 5, 23, 17, 0, 0);
+            const deadline = new Date(2024, 5, 23, 16, 0, 0);
             // new Date(yyyy, mm-1, dd, hh, mm, ss);
             // id таймера
             let timerId = null;
