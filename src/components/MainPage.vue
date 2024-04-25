@@ -122,7 +122,7 @@
                             <input v-model="fio" class="inputname" type="text" name="name" placeholder="Аты-жөніңіз">
                             <span class="spanzay">Той иелеріне тілегіңіз:</span>
                             <textarea v-model="greet" name="tilek" class="inputtilek" placeholder="Тілегіңізді осында жазыңыз"></textarea>
-                            <button :disabled="isEmpty()" @click="sendShit()" class="zayotrp">Жіберу</button>
+                            <button :disabled="isEmpty() || isSend" @click="sendShit()" class="zayotrp">Жіберу</button>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,8 @@ export default{
     data(){
         return{
             greet:'',
-            fio:''
+            fio:'',
+          isSend: false,
         }
     },
     methods:{
@@ -161,8 +162,7 @@ export default{
         let variant = document.querySelector('input[name="zhauap"]:checked').value;
         let fio = this.fio
         let greet = this.greet
-        let payload = "ФИО: " + fio + "\n" + "Выбрано: " + variant + "\n" + "Поздравление: " + greet;
-
+        let payload = "ФИО: " + fio + "\n" + "Выбрано: " + variant + "\n" + "Поздравление: " + greet
         this.sendMessage(payload)
       },
         sendMessage(payload) {
@@ -170,6 +170,7 @@ export default{
           const message = payload;
           const telegramBotToken = '7009790724:AAE41v1JvXR41Fkt4UmrqCAqmvO0EwO1J5Y';
           const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
+
 
           chatIds.forEach(chatId => {
             axios.post(url, {
@@ -193,6 +194,7 @@ export default{
                 variant:'success',
                 solid:true,
             })
+          this.isSend = true;
         },
         // },
     },

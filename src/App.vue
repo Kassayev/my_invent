@@ -1607,7 +1607,7 @@ body {
 }
 
 .palette__item--6 {
-  background-color: green;
+  background-color: #fafc83;
 }
 
 .palette__item--7 {
