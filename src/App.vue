@@ -1572,6 +1572,7 @@ body {
 .palette {
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 
 .palette__row {
@@ -1657,7 +1658,7 @@ body {
 	background-image: url(./assets/images/bg-2_2.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
-	background-size: 100% 60%;
+	background-size: 120% 100%;
 	/*min-height: 800px;*/
 }
 
@@ -1666,7 +1667,7 @@ body {
     color: #202020;
     font-size: 22px;
     display: flex;
-    padding-bottom: 75px;
+    padding-bottom: 10px;
     flex-direction: column;
     align-items: center;
 }
@@ -2571,7 +2572,7 @@ span.newprice {
     right: 20px;
     width: 194px;
     height: 60px;
-    background: #18BF6F;
+    background: #77bdb7;
     border-radius: 50px;
     padding: 7px;
     box-shadow: 0px 2px 3px #00000059;
@@ -2599,110 +2600,11 @@ span.newprice {
     float: left;
 }
 
-@media (max-width: 500px) {
-	.abouttoi {
-		padding-bottom: 275px;
-	}
-
-	.brblok {
-		display: none;
-	}
-
-}
 
 @media (max-width: 454px) {
 	.kurmetti {
 		margin-top: 480px!important;
 	}
-	.blok-2 {
-    background-size: 105%;
-	}
-
 }
 
-/*@media (max-width: 430px) {
-
-	.kurmetti {
-		margin-top: 524 px;
-	}
-
-}*/
-
-@media (max-width: 420px) {
-
-	.kurmetti {
-		margin-top: 460px!important;
-	}
-
-
-}
-
-@media (max-width: 400px) {
-
-	.kurmetti {
-		margin-top: 440px!important;
-	}
-
-	.brblok {
-		display: none;
-	}
-
-}
-
-@media (max-width: 398px) {
-/*	.blok-4 {
-		height: 800px;
-	}*/
-	.blok-2 {
-    background-size: 112%;
-	}
-
-}
-
-@media (max-width: 381px) {
-
-
-	.blok-2 {
-    background-size: 120%;
-	}
-	.abouttoi {
-		padding-bottom: 280px;
-	}
-
-	.kurmetti {
-		margin-top: 415px!important;
-	}
-
-/*	.blok-4 {
-		height: 790px;
-	}*/
-
-	.blok-1 {
-		/*min-height: 700px;*/
-	}
-
-	.songitext {
-		padding: 0 14px;
-	}
-}
-
-@media (max-width: 345px) {
-	.blok-2 {
-		background-position: center bottom;
-		background-size: cover;
-	}
-
-	.kurmetti {
-		margin-top: 370px!important;
-		font-size: 26px;
-	}
-
-	.ozgetilekter {
-		width: 292px;
-	}
-
-	.songitext {
-		padding: 0 8px;
-	}
-}
 </style>
