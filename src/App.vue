@@ -1561,6 +1561,14 @@ body {
   font-size: 27px;
 }
 
+.font-ml {
+  font-size: 31px;
+}
+
+.bolt-c {
+
+}
+
 .font-l {
   font-size: 35px;
 }

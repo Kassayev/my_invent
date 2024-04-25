@@ -48,7 +48,7 @@
                             <h1 class="monument brow font-xs mt-3">
                               Мекен-жаймыз:
                             </h1>
-                            <h1 class="asylbek blue font-m mt-3">
+                            <h1 class="asylbek blue font-ml mt-3">
                               Астана қаласы <br>
                               Хусейн Бен Талал көшесі 25 <br>
                               "Wyndam Garden Astana" <br>
@@ -71,12 +71,12 @@
                                 </div>
                             </div>
                             <div class="toi8"></div>
-                            <h1 class="asylbek blue font-m mt-3">
+                            <h1 class="asylbek blue font-l mt-3">
                               Құрметті ханымдар!
                             </h1>
-                          <h1 class="asylbek blue font-m mt-3">
-                            Қиім үлгіңізді төмендегі түстерден <br>
-                            таңдауыңызды сұраймыз!
+                          <h1 class="asylbek blue font-l mt-3">
+                            Киім үлгіңізді төмендегі<br>
+                            түстерден таңдауыңызды сұраймыз!
                           </h1>
                             <div class="toi10 palette mt-4">
                               <div class="palette__row mb-2">
