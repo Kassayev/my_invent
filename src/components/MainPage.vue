@@ -54,7 +54,7 @@
                               "Wyndam Garden Astana" <br>
                               мейрамханасы
                             </h1>
-                          <a target="_blank" href="https://2gis.kz/aktobe/geo/70000001076111811" class="twogis mt-3">Карта арқылы ашу</a>
+                          <a target="_blank" href="https://2gis.kz/astana/geo/70000001027222031/71.407466,51.082111" class="twogis mt-3">Карта арқылы ашу</a>
                             <div style="    width: 100%;">
                             </div>
                             <div class="toi5">
@@ -159,6 +159,9 @@ export default{
             }
         },
       sendShit() {
+        if (this.isSend) {
+          return;
+        }
         let variant = document.querySelector('input[name="zhauap"]:checked').value;
         let fio = this.fio
         let greet = this.greet
@@ -176,24 +179,23 @@ export default{
             axios.post(url, {
               chat_id: chatId,
               text: message,
-            })
-                .then(response => {
-                  // console.log('Message sent successfully:', response.data);
-                })
-                .catch(error => {
-                  // console.error('Error sending message:', error);
-                });
+            }).then(response => {
+                // console.log('Message sent successfully:', response.data);
+              })
+              .catch(error => {
+                // console.error('Error sending message:', error);
+              });
           });
-            // let  = document.querySelector('input[name="zhauap"]:checked').value;
-            document.getElementsByClassName('inputname')[0].value = ''
-            document.getElementsByClassName('inputtilek')[0].value = ''
-            this.$bvToast.toast('Ақпарат той иелеріне жіберілді!', {
-                title: 'Хабарлама!',
-                noAutohide:true,
-                appendToast: true,
-                variant:'success',
-                solid:true,
-            })
+          // let  = document.querySelector('input[name="zhauap"]:checked').value;
+          this.greet = ''
+          this.fio = ''
+          this.$bvToast.toast('Ақпарат той иелеріне жіберілді!', {
+              title: 'Хабарлама!',
+              noAutohide:true,
+              appendToast: true,
+              variant:'success',
+              solid:true,
+          })
           this.isSend = true;
         },
         // },
