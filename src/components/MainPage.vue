@@ -14,7 +14,7 @@
                             Cіздерді қызымыз
                         </h1>
                         <h1 class="saules_title">
-                            Cәуленің Ұзату
+                            Cауленің Ұзату
                         </h1>
                       <h1 class="kurmetti_1 kurmetti_2">
                         Тойына арналған <br>
