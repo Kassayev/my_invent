@@ -40,7 +40,7 @@
                               2024
                             </div>
                             <h1 class="monument brow font-xs">
-                              24 маусым
+                              23 маусым
                             </h1>
                             <h1 class="monument brow font-xs">
                               16:00
