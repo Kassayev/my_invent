@@ -342,7 +342,18 @@ form.selectform {
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: 'asylbek';
+  src: url('./assets/fonts/AsylbekM02Shelley.kz.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'monument';
+  src: url('./assets/fonts/KZPFMonumentaPro-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
 
 /* - - - - - - - PRELOADER START- - - - - - - - - - - - - */
 
@@ -1466,7 +1477,7 @@ a.footerpolit {
     padding-bottom: 15px;
     padding-top: 6px;
     text-align: center;
-    border: 2px solid #2aaf25;
+    border: 2px solid #77bdb7;
     border-radius: 50%;
 }
 .timer__item::before {
@@ -1508,21 +1519,130 @@ body {
 
 .blok-1 {
 	/* background-image: url(./assets/images/fon-default.png); */
-	background-image: url(./assets/images/serj-bratan.png);
+	background-image: url(./assets/images/saule.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
+.monument {
+  text-align: center;
+  font-family: monument;
+  font-size: 17px;
+}
+
+.asylbek {
+  text-align: center;
+  font-family: asylbek;
+  font-size: 17px;
+}
+
+.brow {
+  color: #9c714b;
+}
+
+.blue {
+  color: #406462;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.font-xs {
+  font-size: 17px;
+}
+
+.font-s {
+  font-size: 22px;
+}
+
+.font-m {
+  font-size: 27px;
+}
+
+.font-l {
+  font-size: 35px;
+}
+
+.font-xl {
+  font-size: 45px;
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+}
+
+.palette__row {
+  display: flex;
+  justify-content: center;
+}
+
+.palette__item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.palette__item--1 {
+  background-color: #c3e4ad;
+}
+
+.palette__item--2 {
+  background-color: #c6c6c6;
+}
+
+.palette__item--3 {
+  background-color: #feefdc;
+}
+
+.palette__item--4 {
+  background-color: #fedadc;
+}
+
+.palette__item--5 {
+  background-color: #fad4bf;
+}
+
+.palette__item--6 {
+  background-color: green;
+}
+
+.palette__item--7 {
+  background-image: url("./assets/images/color7.jpg");
+  background-size: contain;
+}
+
 .kurmetti {
 	text-align: center;
-	font-family: Cormorant-700;
-	font-size: 29px;
-	text-transform: uppercase;
-	background: #4D792E;
+	font-family: monument;
+	font-size: 17px;
+	background: #406462;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	margin-top: 510px!important;
+	margin-top: 530px!important;
+}
+.kurmetti_1 {
+	text-align: center;
+	font-family: monument;
+	font-size: 22px;
+	background: #9c714b;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: 20px!important;
+}
+.kurmetti_2 {
+  font-size: 17px;
+}
+.saules_title {
+	text-align: center;
+	font-family: asylbek;
+	font-size: 50px;
+	background: #406462;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: 15px!important;
 }
 
 .shaktext {
@@ -1534,10 +1654,10 @@ body {
 }
 
 .blok-2 {
-	background-image: url(./assets/images/fon-5.png);
+	background-image: url(./assets/images/bg-2_2.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 60%;
 	/*min-height: 800px;*/
 }
 
@@ -1552,9 +1672,10 @@ body {
 }
 
 .toi1 {
-	font-family: Cormorant-700;
-	font-size: 36px;
-	margin-top: 205px;
+	font-family: monument;
+	font-size: 25px;
+  color: #9c714b;
+	margin-top: 165px;
 	margin-bottom: 20px;
 }
 
@@ -1563,8 +1684,9 @@ body {
 }
 
 .toi3 {
-	font-family: Cormorant-600;
-	font-size: 30px;
+	font-family: asylbek;
+	font-size: 45px;
+  color: #406462;
 }
 
 .toi4 {
@@ -1572,9 +1694,11 @@ body {
 }
 
 .toi5 {
-	font-family: FuturaPT-400;
+	font-family: monument;
 	margin-top: 30px;
 	margin-bottom: 20px;
+  color: #9c714b;
+  font-size: 17px;
 }
 
 .toi7 {
@@ -1628,11 +1752,11 @@ img.mapimage {
 	font-size: 18px;
 	text-align: center;
 	color: #fff;
-	background: linear-gradient(117.06deg, #20741D 23.73%, #41BE3D 45.38%, #20741D 52.48%, #2AAF25 80.6%);
+	background: linear-gradient(117.06deg, #406462 23.73%, #77bdb7 45.38%, #406462 52.48%, #77bdb7 80.6%);
 	border-radius: 10px;
 	padding: 15px;
-	border-bottom: 4px solid #41BE3D;
-	box-shadow: 1px 3px 10px #41BE3D;
+	border-bottom: 4px solid #77bdb7;
+	box-shadow: 1px 3px 10px #77bdb7;
 	text-decoration: none;
 }
 
@@ -1719,8 +1843,9 @@ a.link-peaksoft {
 }
 
 .prigtitle {
-	font-family: Cormorant-700;
+	font-family: monument;
 	font-size: 24px;
+  color: #9c714b;
 	text-align: center;
 	line-height: 26px;
 	margin-top: 60px;
@@ -1780,18 +1905,18 @@ input.inputname:focus {
   font-size: 18px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(117.06deg, #20741D 23.73%, #41BE3D 45.38%, #20741D 52.48%, #2AAF25 80.6%);
+  background: linear-gradient(117.06deg, #406462 23.73%, #406462 45.38%, #406462 52.48%, #77bdb7 80.6%);
   border-radius: 10px;
   padding: 15px;
-  border-bottom: 4px solid #20741D;
-  box-shadow: 1px 3px 10px #20741D;
+  border-bottom: 4px solid #406462;
+  box-shadow: 1px 3px 10px #406462;
   margin-top: 20px;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
 .zayotrp:hover {
-  background: linear-gradient(117.06deg, #1D6B1B 23.73%, #39A22F 45.38%, #1D6B1B 52.48%, #26A035 80.6%);
+  background: linear-gradient(117.06deg, #406462 23.73%, #77bdb7 45.38%, #406462 52.48%, #77bdb7 80.6%);
 }
 
 .zayotrp:disabled {
@@ -1872,6 +1997,8 @@ input.inputname:focus {
 }
 
 .otvetyn {
+  font-family: monument;
+  color: #406462FF;
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -1932,14 +2059,14 @@ input.inputname:focus {
 
 /* ��亳仍亳 仗�亳 仆舒于亠亟亠仆亳亳 从���仂�舒 仆舒 �舒亟亳仂 */
 .custom-radio:not(:disabled):not(:checked)+label:hover::before {
-	border-color: #20741D;
+	border-color: #406462;
 }
 
 
 /* ��亳仍亳 亟仍� 舒从�亳于仆仂亶 �舒亟亳仂从仆仂仗从亳 (仗�亳 仆舒亢舒�亳亳 仆舒 仆亠�) */
 .custom-radio:not(:disabled):active+label::before {
-	background-color: #20741D;
-	border-color: #20741D;
+	background-color: #406462;
+	border-color: #406462;
 }
 
 /* ��亳仍亳 亟仍� �舒亟亳仂从仆仂仗从亳, 仆舒�仂亟��亠亶�� 于 �仂从��亠 */
@@ -1949,19 +2076,19 @@ input.inputname:focus {
 
 /* ��亳仍亳 亟仍� �舒亟亳仂从仆仂仗从亳, 仆舒�仂亟��亠亶�� 于 �仂从��亠 亳 仆亠 仆舒�仂亟��亠亶�� 于 �仂��仂�仆亳亳 checked */
 .custom-radio:focus:not(:checked)+label::before {
-	border-color: #20741D;
+	border-color: #406462;
 }
 
 /* ��亳仍亳 亟仍� �舒亟亳仂从仆仂仗从亳, 仆舒�仂亟��亠亶�� 于 �仂��仂�仆亳亳 checked */
 .custom-radio:checked+label::before {
-	border-color: #20741D;
-	background-color: #20741D;
+	border-color: #406462;
+	background-color: #406462;
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 
 /* ��亳仍亳 亟仍� �舒亟亳仂从仆仂仗从亳, 仆舒�仂亟��亠亶�� 于 �仂��仂�仆亳亳 disabled */
 .custom-radio:disabled+label::before {
-	background-color: #20741D;
+	background-color: #406462;
 }
 
 .custom-checkbox {
@@ -1992,8 +2119,8 @@ input.inputname:focus {
 }
 
 .custom-checkbox:checked+label::before {
-	border-color: #20741D;
-	background-color: #20741D;
+	border-color: #406462;
+	background-color: #406462;
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 

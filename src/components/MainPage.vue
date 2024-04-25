@@ -5,16 +5,22 @@
                 <div class="row">
                     <div class="col-12">
                         <h1 class="kurmetti">
-                            Құрметті қонақтар! 					
+                            Құрметті ағайын-туыс, <br>
+                          Бауырлар, құда-жекжат, <br>
+                          Нағашы-жиен, бөлелер, <br>
+                          Әріптестер, дос-жарандар
                         </h1>
-                        <div class="shaktext">
-                            <p>
-                                Сіз(дер)ді <br> ұлымыз Берікбол мен келініміз Сауленің
-                                шаңырақ көтеру тойына арналған
-                                салтанатты ақ дастарханымыздың
-                                қадірлі қонағы болуға шақырамыз.
-                            </p>
-                        </div>
+                        <h1 class="kurmetti_1">
+                            Cіздерді қызымыз
+                        </h1>
+                        <h1 class="saules_title">
+                            Cәуленің Ұзату
+                        </h1>
+                      <h1 class="kurmetti_1 kurmetti_2">
+                        Тойына арналған <br>
+                        Дастарханымыздың қадірлі <br>
+                        Қонағы болуға шақырамыз!
+                      </h1>
                     </div>
                 </div>
             </div>
@@ -25,19 +31,31 @@
                     <div class="col-12">
                         <div class="abouttoi">
                             <div class="toi1">
-                                Той жайлы
-                            </div>
-                            <div class="toi2">
-                                Той иелері:
+                              Той иелері
                             </div>
                             <div class="toi3">
-                                Марат-Света					</div>
-                            <div class="toi7"></div>
-                            <div class="toi4">
-                                Тойдың басталу уақыты:<br>
-                                29.06.2024				</div>
+                              Қайрат-Шайзада
+                            </div>
+                            <div class="toi3">
+                              2024
+                            </div>
+                            <h1 class="monument brow font-xs">
+                              24 маусым
+                            </h1>
+                            <h1 class="monument brow font-xs">
+                              16:00
+                            </h1>
+                            <h1 class="monument brow font-xs mt-3">
+                              Мекен-жаймыз:
+                            </h1>
+                            <h1 class="asylbek blue font-m mt-3">
+                              Астана қаласы <br>
+                              Хусейн Бен Талал көшесі 25 <br>
+                              "Wyndam Garden Astana" <br>
+                              мейрамханасы
+                            </h1>
+                          <a target="_blank" href="https://2gis.kz/aktobe/geo/70000001076111811" class="twogis mt-3">Карта арқылы ашу</a>
                             <div style="    width: 100%;">
-                                <vertical-timeline />
                             </div>
                             <div class="toi5">
                                 Тойдың басталуына қалды:
@@ -53,12 +71,26 @@
                                 </div>
                             </div>
                             <div class="toi8"></div>
-                            <div class="toi9">Тойдың мекен-жайы:</div>
-                            <div class="toi10">
-                                &ZeroWidthSpace;Ақтөбе қаласы, Сеитова, 7 <br>
-                                <span>"Sultan Saray" тойханасы</span><br><br>
+                            <h1 class="asylbek blue font-m mt-3">
+                              Құрметті ханымдар!
+                            </h1>
+                          <h1 class="asylbek blue font-m mt-3">
+                            Қиім үлгіңізді төмендегі түстерден <br>
+                            таңдауыңызды сұраймыз!
+                          </h1>
+                            <div class="toi10 palette mt-4">
+                              <div class="palette__row mb-2">
+                                <div class="palette__item palette__item--1 mr-3"></div>
+                                <div class="palette__item palette__item--2 mr-2"></div>
+                                <div class="palette__item palette__item--3"></div>
+                              </div>
+                              <div class="palette__row">
+                                <div class="palette__item palette__item--4 mr-2"></div>
+                                <div class="palette__item palette__item--5 mr-2"></div>
+                                <div class="palette__item palette__item--6 mr-2"></div>
+                                <div class="palette__item palette__item--7"></div>
+                              </div>
                             </div>
-                            <a target="_blank" href="https://2gis.kz/aktobe/geo/70000001076111811" class="twogis">Карта арқылы ашу</a>
                         </div>
                     </div>
                 </div>
