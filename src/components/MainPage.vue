@@ -51,7 +51,7 @@
                             <h1 class="asylbek blue font-ml mt-3">
                               Астана қаласы <br>
                               Хусейн Бен Талал көшесі 25 <br>
-                              "Wyndam Garden Astana" <br>
+                              "Wyndham Garden Astana" <br>
                               мейрамханасы
                             </h1>
                           <a target="_blank" href="https://2gis.kz/astana/geo/70000001027222031/71.407466,51.082111" class="twogis mt-3">Карта арқылы ашу</a>
