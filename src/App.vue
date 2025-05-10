@@ -1467,6 +1467,7 @@ a.footerpolit {
     font-family: 'gilroy500';
     justify-content: center;
     color: #202020;
+    padding-bottom: 70px;
 }
 .timer__item {
     position: relative;
@@ -1519,7 +1520,7 @@ body {
 
 .blok-1 {
 	/* background-image: url(./assets/images/fon-default.png); */
-	background-image: url(./assets/images/saule-min.png);
+	background-image: url(./assets/images/main.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -1663,7 +1664,7 @@ body {
 }
 
 .blok-2 {
-	background-image: url(./assets/images/bg-2_2.png);
+	background-image: url(./assets/images/bg1-1.png);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	background-size: 125% 100%;
@@ -1698,6 +1699,11 @@ body {
   color: #406462;
 }
 
+.toi3_3 {
+  font-family: asylbek;
+  font-size: 45px;
+  color: #9c714b;
+}
 .toi4 {
 	font-family: Cormorant-600;
 }
@@ -1721,7 +1727,6 @@ body {
 
 .toi8 {
 	height: 1px;
-	width: 70%;
 	margin: 0 auto;
 	background: #EDEDED;
 	margin-top: 30px;
