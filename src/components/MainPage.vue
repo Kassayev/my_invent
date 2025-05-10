@@ -17,7 +17,7 @@
               Сержан мен Аиданың
             </h1>
             <h1 class="kurmetti_1 kurmetti_2">
-              Шанырақ көтеру <br>
+              Шаңырақ көтеру <br>
               тойына арналған <br>
               Дастарқанымыздың қадірлі <br>
               Қонағы болуға шақырамыз!
@@ -35,7 +35,7 @@
                 Той иесі
               </div>
               <div class="toi3">
-                Ақгүл
+                Ақгүл Спанқызы
               </div>
               <div class="toi3_3">
                 2025
@@ -91,16 +91,16 @@
             <div id="form-1" class="zayavka">
               <input type="hidden" name="shaqyruid" value="1787">
               <input type="hidden" name="konakid" value="0">
-              <input class="custom-radio" checked="yep" type="radio" value="Иә, өзім барамын!" id="contactChoice1"
-                     name="zhauap">
+              <input class="custom-radio" type="radio" value="Иә, өзім барамын" id="contactChoice1"
+                     name="zhauap" v-model="selectedOption">
               <label class="otvetyn" for="contactChoice1">Иә, өзім барамын</label>
               <br>
-              <input class="custom-radio" checked="yep" type="radio" value="Жұбайыммен бірге барамын"
-                     id="contactChoice2" name="zhauap">
+              <input class="custom-radio" type="radio" value="Жұбайыммен бірге барамын"
+                     id="contactChoice2" name="zhauap" v-model="selectedOption">
               <label class="otvetyn" for="contactChoice2">Жұбайыммен бірге барамын</label>
               <br>
-              <input class="custom-radio" checked="yep" type="radio" value="Өкінішке орай, келе алмаймын"
-                     id="contactChoice3" name="zhauap">
+              <input class="custom-radio" type="radio" value="Өкінішке орай, келе алмаймын"
+                     id="contactChoice3" name="zhauap" v-model="selectedOption">
               <label class="otvetyn" for="contactChoice3">Өкінішке орай, келе алмаймын</label>
               <br>
               <span class="spanzay">Аты-жөніңіз:</span>
@@ -131,6 +131,7 @@ export default {
   },
   data() {
     return {
+      selectedOption: "Иә, өзім барамын",
       greet: '',
       fio: '',
       isSend: false,
